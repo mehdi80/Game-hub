@@ -1,4 +1,3 @@
-import {Genre} from "./useGenres";
 import useData from "./useData";
 import {GameQuery} from "../App";
 
@@ -19,9 +18,7 @@ export interface Game {
 
 
 const useGames = (
-
-    gameQuery:GameQuery
-
+    gameQuery: GameQuery
 ) =>
     useData<Game>('/games', {
             params: {
