@@ -4,9 +4,9 @@ import GameGrid from "./components/GameGrid";
 import GenreList from "./components/GenreList";
 import {Genre} from "./hooks/useGenres"
 import {useState} from "react";
-import PlatformSelector from "./components/platformSelector";
+import PlatformSelector from "./components/PlatformSelector";
 import {Platform} from "./hooks/useGames";
-import SortSelector from "./components/sortSelector";
+import SortSelector from "./components/SortSelector";
 import GameHeading from "./components/GameHeading";
 
 
@@ -28,7 +28,7 @@ function App() {
         }}
               templateColumns={{
                   base: '1fr',
-                  lg: '300px 1fr'
+                  lg: '200px 1fr'
               }}>
             <GridItem area='nav'>
                 <NavBar onSearch={(searchText) => setGameQuery({...gameQuery, searchText})}/>
